@@ -2,12 +2,22 @@
 permalink: /
 title: |
   Hello! { Website Still in Progress! }
-  PhD Student @ University of Delaware
+  
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+<p>
+I am currently a third-year PhD student at the University of Delaware, working in <a href="https://sites.udel.edu/arthij/" target="_blank">The Jayaraman Research Group</a>, led by Prof. Arthi Jayaraman. My research focuses on molecular modeling and simulations (both Atomistic and Coarse-Grained), along with machine learning, to understand the structures, dynamics, and thermodynamics of novel materials.
+</p>
+
+<p style="text-align: justify;">
+  Resume in 
+  <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank"> PDF</a>
+</p>
+
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
 

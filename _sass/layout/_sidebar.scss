@@ -12,6 +12,7 @@
 
   @include clearfix();
   margin-bottom: 1em;
+  padding-right: 1em;
 
   @media screen and (min-width: $sidebar-screen-min-width) {
     height: 100vh;
@@ -19,6 +20,17 @@
     position: fixed;
     padding-top: $masthead-height;
   }
+
+  // /* Collapse sidebar on mobile */
+  // @media screen and (max-width: 768px) {
+  //   transform: translateX(-120%); /* Hide sidebar by moving it off-screen */
+  //   transition: transform 0.3s ease-in-out; /* Smooth animation */
+  //   width: 250px;
+    
+  // }
+  // &.open {
+  //   transform: translateX(0);
+  // }
 
   @include breakpoint($large) {
     @include span(2 of 12);
