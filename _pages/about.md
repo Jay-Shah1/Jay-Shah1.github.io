@@ -1,6 +1,8 @@
 ---
 permalink: /
-title: "Hello! { Website Still in Progress! }\nPhD Student @ University of Delaware"
+title: |
+  Hello! { Website Still in Progress! }
+  PhD Student @ University of Delaware
 author_profile: true
 redirect_from: 
   - /about/
