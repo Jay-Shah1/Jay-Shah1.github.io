@@ -26,7 +26,7 @@ author:
   name             : "Jay Shah"
   pronouns         : # example: "she/her"  
   bio              : "I work on computational methods to study polymers system"
-  location         : "Newark"
+  location         : #"Newark"
   employer         : "University of Delaware"
   uri              : # URL
   email            : "jayshah@udel.edu" 
@@ -214,16 +214,16 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   teaching:
-    output: true
+    output: false # Make true when done
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
