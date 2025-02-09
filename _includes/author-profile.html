@@ -11,7 +11,7 @@
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
-    	<img src="https://Jay-Shah1.github.io/images/profile_main.jpg" class="author__avatar" alt="{{ author.name }}">
+    	<img src="https://Jay-Shah1.github.io/images/profile_main.jpg" class="author__avatar" alt="{{ author.name }}" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;">
     {% endif %}
   </div>
 
