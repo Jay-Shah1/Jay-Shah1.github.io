@@ -1,22 +1,50 @@
 ---
 permalink: /
-title: |
-  Hello! { Website Still in Progress! }
+title: Hello! { Website Still in Progress! }
   
+
+
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-<p>
-I am currently a third-year PhD student at the University of Delaware, working in <a href="https://sites.udel.edu/arthij/" target="_blank">The Jayaraman Research Group</a>, led by Prof. Arthi Jayaraman. My research focuses on molecular modeling and simulations (both Atomistic and Coarse-Grained), along with machine learning, to understand the structures, dynamics, and thermodynamics of novel materials.
+<p  style="text-align: justify;">
+  I am currently a third-year PhD student at the University of Delaware, working in <a href="https://sites.udel.edu/arthij/" target="_blank">The Jayaraman Research Group</a>, led by Prof. Arthi Jayaraman. My research focuses on molecular modeling and simulations (both Atomistic and Coarse-Grained), along with machine learning, to understand the structures, dynamics, and thermodynamics of novel materials.
 </p>
 
-<p style="text-align: justify;">
-  Resume in 
-  <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank"> PDF</a>
-</p>
+
+
+## Journey
+
+<div class="timeline-section">
+  <ul>
+    <li><span class="year">Fall 2024</span><span class="event">Completed NRT training; received "Most Engaging Student" award</span></li>
+    <li><span class="year">Fall 2024</span><span class="event">Presented at AIChE 2024, San Diego</span></li>
+    <li><span class="year">Fall 2024</span><span class="event">Participated in ATOM Hackathon and the team won best technical project award </span></li>
+    <li><span class="year">Fall 2024</span><span class="event">Attended joint NRT event at Duke; won Best Proposal Pitch Award</span></li>
+    <li><span class="year">Fall 2024</span><span class="event">Took Computer Architecture course</span></li>
+    <li><span class="year">Spring 2024</span><span class="event">Presented poster at APS March Meeting, Minneapolis</span></li>
+    <li><span class="year">Fall 2023</span><span class="event">Presented at first conference, MRS Fall Meeting, Boston</span></li>
+    <li><span class="year">Fall 2023</span><span class="event">Passed my Qualifier Exam</span></li>
+    <li><span class="year">Spring 2023</span><span class="event">Joined Prof. Arthi Jayaraman's Lab and NRT-MIDAS</span></li>
+    <li><span class="year">Fall 2022</span><span class="event">Started PhD at University of Delaware</span></li>
+    <li><span class="year">Summer 2021</span><span class="event">Worked with Prof. Ramin Moghaddass, University of Miami</span></li>
+    <li><span class="year">Spring 2020</span><span class="event">Founded Finance Club, Annuity at IITGN</span></li>
+    <li><span class="year">Spring 2020</span><span class="event">Council Member at IR&P, IITGN</span></li>
+    <li><span class="year">Spring 2020</span><span class="event">Started research with Prof. Kabeer Jasuja</span></li>
+    <li><span class="year">Fall 2019</span><span class="event">Helped organize Amalthea, IITGN Technical Summit</span></li>
+    <li><span class="year">Summer 2019</span><span class="event">Selected for Invent@IITGN</span></li>
+    <li><span class="year">July 2018</span><span class="event">Joined Chemical Engineering at IIT Gandhinagar</span></li>
+  </ul>
+</div>
+
+<p style="margin-top: 3em;"> <b>Resume</b> in <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank">PDF</a></p>
+
+
+
+
 
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
