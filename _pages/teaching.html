@@ -7,6 +7,56 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<style>
+    .teaching-container {
+        border-radius: 12px;
+        padding: 20px;
+        margin: 0 0 25px 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        background: #f9f9f9;
+        position: relative;
+    }
+    /* .teaching-container:hover {
+        transform: translateY(-5px);
+    } */
+    h2 {
+        font-size: 1.2em;
+        margin-top: 0.2em;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ccc;
+        color: #003366;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    ul li {
+        font-size: 0.9em;
+        padding: 8px 0;
+        margin-left:1em;
+    }
+</style>
+
+<div>
+    <h2>University of Delaware</h2>
+    <ul id="udel-teaching">
+        <li><b>Spring 2025</b> - NRT Hackathon, Prof. Arthi Jayaraman</li>
+        <li><b>Fall 2024</b> - Molecular Modelling and Simulation Course, Prof. Arthi Jayaraman</li>
+        <li><b>Summer 2024</b> - Teaching Certificate Course by Prof. Joshua A. Enszer</li>
+    </ul>
+</div>
+
+<div>
+    <h2>IIT Gandhinagar</h2>
+    <ul id="iitgn-teaching">
+      <li><b>Spring 2022</b> - Process Control, Prof. Pratyush Dayal</li>
+      <li><b>Fall 2021</b> - Undergrad Teaching Certificate Course</li>
+      <li><b>Spring 2021</b> - Fluid Mechaics Lab, Prof. Prachi Thareja </li>
+    </ul>
+</div>
+
+<blockquote>
+  <i>"You are never wrong to do right thing"</i>
+</blockquote>

@@ -11,8 +11,50 @@ author_profile: true
 
 {% include base_path %}
 
+<style>
+  .conference-name {
+    font-weight: bold;
+    color: #808080;
+    font-style: italic; 
+
+  }
+</style>
+
+<section id="talks">
+  <h2>Talks / Conferences</h2>
+  <ul class="talks-list">
+    <li>
+      <strong>Presentation:</strong> 
+      <a href="https://www.mrs.org/meetings-events/annual-meetings/archive/meeting/presentations/view/2023-mrs-fall-meeting/2023-mrs-fall-meeting-3954739" target="_blank">
+        Computational Studies to Understand the Effect of Polysulfamide Designs on Structure and Properties </a> 
+       <span class="conference-name"><b>MRS Fall Meeting</b></span>, 2023
+    </li>
+    <li>
+      <strong>Poster:</strong> 
+      <a href="https://meetings.aps.org/Meeting/MAR24/Session/N00.19" target="_blank">
+        Linking Polysulfamide Design to Morphology Using Molecular Simulation and Machine Learning
+      </a> 
+       <span class="conference-name"><b>APS March Meeting</b></span>, 2024
+    </li>
+    <li>
+      <strong>Presentation:</strong> 
+      3-min Presentation at <span class="conference-name"><b>Duke University</b></span>, 2024
+    </li>
+    <li>
+      <strong>Presentation:</strong> 
+      <a href="https://aiche.confex.com/aiche/2024/meetingapp.cgi/Paper/688009" target="_blank">
+        Understanding Self-Assembly of Polysulfamides from Molecular Dynamics Simulations Using Atomistically-Informed Coarse Grained Models
+      </a> 
+       <span class="conference-name"><b>AiCHE Fall Meeting</b></span>, 2024
+    </li>
+  </ul>
+</section>
+
+
+
+
 <!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
+<!-- {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
@@ -30,7 +72,7 @@ author_profile: true
   {% for post in site.publications reversed %}
     {% include archive-single.html %}
   {% endfor %}
-{% endif %}
+{% endif %} -->
 
 
 
