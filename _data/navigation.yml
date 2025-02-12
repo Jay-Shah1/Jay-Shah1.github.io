@@ -23,8 +23,8 @@ main:
   - title: "CV"
     url:  /files/Resume_Jay_Shah.pdf
 
-  - title: "More about me"
-    url: /Moreaboutme/
+  # - title: "More about me"
+  #   url: /Moreaboutme/
     
     
   # - title: "Guide"

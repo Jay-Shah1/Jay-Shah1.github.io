@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: Hello! { Website Still in Progress! }
+title: Jay 
   
 
 
@@ -27,6 +27,7 @@ redirect_from:
     <li><span class="year">Fall 2024</span><span class="event">Took Computer Architecture course</span></li>
     <li><span class="year">Spring 2024</span><span class="event">Presented poster at APS March Meeting, Minneapolis</span></li>
     <li><span class="year">Fall 2023</span><span class="event">Presented at first conference, MRS Fall Meeting, Boston</span></li>
+    <li><span class="year">Fall 2023</span><span class="event">Awarded Morton '58 and Donna Collins Chemical Engineering Fellowship</span></li>
     <li><span class="year">Fall 2023</span><span class="event">Passed my Qualifier Exam</span></li>
     <li><span class="year">Spring 2023</span><span class="event">Joined Prof. Arthi Jayaraman's Lab and NRT-MIDAS</span></li>
     <li><span class="year">Fall 2022</span><span class="event">Started PhD at University of Delaware</span></li>
