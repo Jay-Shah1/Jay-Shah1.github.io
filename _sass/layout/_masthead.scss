@@ -7,6 +7,7 @@
   background: var(--global-bg-color);
   border-bottom: 1px solid var(--global-border-color);
   height: $masthead-height;
+  margin-left: 5em;
   top: 0;
   width: 100%;
 
@@ -15,7 +16,10 @@
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
-
+  
+  @media (max-width: 500px) { // Adjust breakpoint as needed
+    margin-left: 1em;
+  }
   &__inner-wrap {
     @include container;
     @include clearfix;
