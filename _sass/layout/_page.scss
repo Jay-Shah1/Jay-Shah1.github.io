@@ -7,7 +7,7 @@
     @include clearfix;
     margin-top: 2em;
     margin-left: 8em;
-    padding-right: 8em;
+    margin-right: 8em;
     
     animation: intro 0.3s both;
     animation-delay: 0.35s;
@@ -20,6 +20,7 @@
 
     @media (max-width: 500px) { // Adjust breakpoint as needed
       margin-left: 1em;
+      margin-right: 0em;
     }
   }
   
