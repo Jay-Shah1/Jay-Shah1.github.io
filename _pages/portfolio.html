@@ -29,6 +29,7 @@ author_profile: true
     width: 100%;  /* Adjust image to fit the container */
     height: auto;
     border-radius: 8px;
+    cursor: pointer;
   }
 
   .caption {
@@ -36,6 +37,34 @@ author_profile: true
     font-size: 1em;
     margin-top: 8px;
     color: #555;
+  }
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
   }
 
   @media (max-width: 768px) {
@@ -79,6 +108,20 @@ author_profile: true
 </blockquote>
 
 <script>
+  // Function to open the lightbox with the clicked image
+  function openLightbox(imgElement) {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+    lightbox.style.display = 'flex';
+    lightboxImg.src = imgElement.src;
+  }
+
+  // Function to close the lightbox
+  function closeLightbox() {
+    var lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+  }
+
   // Randomly change the width of each image-item on page load
   const items = document.querySelectorAll('.image-item');
   items.forEach(item => {
