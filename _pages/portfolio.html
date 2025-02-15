@@ -1,14 +1,98 @@
 ---
 layout: archive
-title: "Portfolio"
-permalink: /portfolio/
+title: "Randomness"
+permalink: /randomness/
 author_profile: true
 ---
 
-{% include base_path %}
-
-
+<!-- {% include base_path %}
 {% for post in site.portfolio %}
   {% include archive-single.html %}
-{% endfor %}
+{% endfor %} -->
 
+<!-- {% include base_path %} -->
+<style>
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .image-item {
+    width: calc(33.33% - 20px);  /* Default to 33% width */
+    box-sizing: border-box;
+    text-align: center;
+    transition: width 0.3s ease;
+  }
+
+  .profile-image {
+    width: 100%;  /* Adjust image to fit the container */
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .caption {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 8px;
+    color: #555;
+  }
+
+  @media (max-width: 768px) {
+    .image-item {
+      width: 100%;  /* Stacks images on smaller screens */
+    }
+  }
+</style>
+
+<section>
+  <div class="image-gallery">
+    <div class="image-item">
+      <img src="/images/Aiche_2024.jpg" class="profile-image" alt="Image 1">
+      <p class="caption">Meeting Prof. Raghavan from my undergrad college at AiCHE 2024, San Diego</p>
+    </div>
+    <div class="image-item">
+      <img src="/images/Duke.jfif" class="profile-image" alt="Image 2">
+      <p class="caption">Harnessing AI for Materials Symposium, Duke </p>
+    </div>
+    <div class="image-item">
+      <img src="/images/Jayaraman_Group.jpg" class="profile-image" alt="Image 3">
+      <p class="caption">Jayaraman Group at APS 2024</p>
+    </div>
+    <div class="image-item">
+      <img src="/images/APS_2024.jpg" class="profile-image" alt="Image 4">
+      <p class="caption">Small <a href = Mini IITGN Student & Alumni Reunion in Minnesota>IIT GN reunion </a> at APS 2024</p>
+    </div>
+    <div class="image-item">
+      <img src="/images/MRS_2023.jpg" class="profile-image" alt="Image 5">
+      <p class="caption">MRS, 2023</p>
+    </div>
+    <div class="image-item">
+      <img src="/images/invent.jpg" class="profile-image" alt="Image 6">
+      <p class="caption">Invent@IITGN</p>
+    </div>
+  </div>
+</section>
+
+<blockquote>
+  <i>"Be kind"</i>
+</blockquote>
+
+<script>
+  // Randomly change the width of each image-item on page load
+  const items = document.querySelectorAll('.image-item');
+  items.forEach(item => {
+    // Generate a random width between 30% and 50%
+    const randomWidth = Math.random() * (50 - 30) + 30;
+    item.style.width = `calc(${randomWidth}% - 20px)`;
+  });
+
+  // Randomly change the number of items per row (2 or 3 images)
+  const randomLayout = Math.random() < 0.5 ? 2 : 3;
+  const itemWidth = 100 / randomLayout; // 50% for 2 items per row, 33.33% for 3 items per row
+  
+  // Adjust image width according to the random layout
+  items.forEach(item => {
+    item.style.width = `calc(${itemWidth}% - 20px)`;
+  });
+</script>
