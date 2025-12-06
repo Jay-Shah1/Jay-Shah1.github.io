@@ -23,22 +23,12 @@ section {
   margin-top: 2em;
 }
 
-/* Links Styling */
-a {
-  color: #00539F;       
-  text-decoration: none; 
-}
-
-a:hover {
-  text-decoration: underline; 
-}
-
 /* Conference / Journal Names */
 .conference-name, .journal-name {
   font-weight: bold;
   color: #00539F; 
   font-style: italic;
-  margin-left: 0.5em; /* spacing after title */
+  margin-left: 0.5em;
 }
 
 /* Lists */
@@ -51,14 +41,27 @@ ol li {
   line-height: 1.4;
 }
 
-.paper-link, .talk-link {
-  font-size: 0.95em;
-  margin-left: 0.5em; /* small space after journal/conference name */
-}
-
 /* Bold your name */
 .bold-name {
   font-weight: bold;
+}
+
+/* Button style for links */
+.paper-link, .talk-link {
+  display: inline-block;
+  margin-top: 0.3em;
+  padding: 0.35em 0.75em;
+  background-color: #00539F; /* UD blue */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.95em;
+  font-weight: bold;
+}
+
+.paper-link:hover, .talk-link:hover {
+  color: white; /* no change on hover */
+  background-color: #00539F; /* no change on hover */
 }
 </style>
 
@@ -101,7 +104,7 @@ ol li {
       <a href="https://aiche.confex.com/aiche/2024/meetingapp.cgi/Paper/688009" class="talk-link" target="_blank">Talk</a>
     </li>
     <li>
-      <span class="bold-name">J. Shah</span>, A. Jayaraman*, 3-min Presentation at <span class="bold-name">J. Shah</span> Duke University
+      <span class="bold-name">J. Shah</span>, A. Jayaraman*, 3-min Presentation at Duke University
       <span class="conference-name">Duke University, 2024</span>
       <a href="#" class="talk-link" target="_blank">Talk</a>
     </li>
@@ -117,6 +120,7 @@ ol li {
     </li>
   </ol>
 </section>
+
 
 
 <blockquote>
