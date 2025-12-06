@@ -159,25 +159,26 @@ redirect_from:
 .timeline {
   list-style: none;
   padding-left: 0;
-  position: relative;
   max-width: 700px;
 }
 
 /* Year block */
 .timeline .year {
-  position: absolute;
-  left: 0;
-  width: 4rem; /* more space for year */
+  display: inline-block;
+  width: 4rem; /* space for year */
   font-weight: bold;
   color: #00539F;
+  text-align: right; /* align year to the right */
+  margin-right: 1rem; /* space between year and event */
 }
 
 /* Event block */
 .timeline .event {
   display: inline-block;
-  margin-left: 0;
+  color: #333;
 }
 </style>
+
 
 
 
