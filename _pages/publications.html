@@ -38,7 +38,7 @@ a:hover {
   font-weight: bold;
   color: #00539F; 
   font-style: italic;
-  float: right;
+  margin-left: 0.5em; /* spacing after title */
 }
 
 /* Lists */
@@ -48,13 +48,17 @@ ol {
 
 ol li {
   margin-bottom: 1em;
+  line-height: 1.4;
 }
 
 .paper-link, .talk-link {
-  display: block;
   font-size: 0.95em;
-  margin-top: 0.2em;
-  color: #00539F;
+  margin-left: 0.5em; /* small space after journal/conference name */
+}
+
+/* Bold your name */
+.bold-name {
+  font-weight: bold;
 }
 </style>
 
@@ -62,25 +66,25 @@ ol li {
   <h2>Papers</h2>
   <ol class="papers-list">
     <li>
-      S. Akepati#, N. Gupta#, J. Shah#, S. Kronenberger, V. Venkat, R. Adhikari, S. Bianco, D. Adams, A. Jayaraman*,
+      S. Akepati#, N. Gupta#, <span class="bold-name">J. Shah#</span>, S. Kronenberger, V. Venkat, R. Adhikari, S. Bianco, D. Adams, A. Jayaraman*,
       Machine‐Learning‐Based CREASE‐2D Analysis of 2D SAXS Profiles to Characterize Anisotropic Nanostructures in Soft Materials
       <span class="journal-name">ACS Measurement AU (2025)</span>
       <a href="https://pubs.acs.org/doi/full/10.1021/acsmeasuresciau.5c00141" class="paper-link" target="_blank">Paper</a>
     </li>
     <li>
-      Y. Saxena#, Po. Lin#, J. Shah#, T. Asamoah, G. Arya, A. Jayaraman, T. Segura*,
+      Y. Saxena#, Po. Lin#, <span class="bold-name">J. Shah#</span>, T. Asamoah, G. Arya, A. Jayaraman, T. Segura*,
       Factorial Data-Driven Inverse Design of Granular Hydrogels for Targeted Therapeutic Release
       <span class="journal-name">NeurIPS AI4MAT Workshop 2025</span>
       <a href="https://openreview.net/forum?id=LM7qZZprCS" class="paper-link" target="_blank">Paper</a>
     </li>
     <li>
-      J. Shah, A. Jayaraman*,
+      <span class="bold-name">J. Shah</span>, A. Jayaraman*,
       Coarse‐grained molecular dynamics simulations of mixtures of polysulfamides
       <span class="journal-name">RSC Applied Polymers, (2025) 3, 453‐468</span>
       <a href="https://doi.org/10.1039/D4LP00362D" class="paper-link" target="_blank">Paper</a>
     </li>
     <li>
-      C. Ghoroi, J. Shah#, D. Thakar#, S. Baheti#
+      C. Ghoroi, <span class="bold-name">J. Shah#</span>, D. Thakar#, S. Baheti#
       Process design & economics of production of p‐Aminophenol
       <span class="journal-name">arXiv, 2021</span>
       <a href="https://arxiv.org/abs/2110.15750" class="paper-link" target="_blank">Paper</a>
@@ -92,22 +96,22 @@ ol li {
   <h2>Talks / Conferences</h2>
   <ol class="talks-list">
     <li>
-      Understanding Self-Assembly of Polysulfamides from Molecular Dynamics Simulations Using Atomistically-Informed Coarse Grained Models
+      <span class="bold-name">J. Shah</span>, Z. Wu, A. Jayaraman*, Understanding Self-Assembly of Polysulfamides from Molecular Dynamics Simulations Using Atomistically-Informed Coarse Grained Models
       <span class="conference-name">AIChE Fall Meeting, 2024</span>
       <a href="https://aiche.confex.com/aiche/2024/meetingapp.cgi/Paper/688009" class="talk-link" target="_blank">Talk</a>
     </li>
     <li>
-      3-min Presentation at Duke University
+      <span class="bold-name">J. Shah</span>, A. Jayaraman*, 3-min Presentation at <span class="bold-name">J. Shah</span> Duke University
       <span class="conference-name">Duke University, 2024</span>
       <a href="#" class="talk-link" target="_blank">Talk</a>
     </li>
     <li>
-      Linking Polysulfamide Design to Morphology Using Molecular Simulation and Machine Learning
+      <span class="bold-name">J. Shah#</span>, A. Paruchuri#, L. Nagidi, S. Lu, A. Jayaraman, Linking Polysulfamide Design to Morphology Using Molecular Simulation and Machine Learning
       <span class="conference-name">APS March Meeting, 2024</span>
       <a href="https://meetings.aps.org/Meeting/MAR24/Session/N00.19" class="talk-link" target="_blank">Poster</a>
     </li>
     <li>
-      Computational Studies to Understand the Effect of Polysulfamide Designs on Structure and Properties
+      <span class="bold-name">J. Shah</span>, Z. Wu, A. Jayaraman*, Computational Studies to Understand the Effect of Polysulfamide Designs on Structure and Properties
       <span class="conference-name">MRS Fall Meeting, 2023</span>
       <a href="https://www.mrs.org/meetings-events/annual-meetings/archive/meeting/presentations/view/2023-mrs-fall-meeting/2023-mrs-fall-meeting-3954739" class="talk-link" target="_blank">Talk</a>
     </li>
