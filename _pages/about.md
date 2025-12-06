@@ -151,7 +151,6 @@ redirect_from:
   <i>"Be Kind"</i>
 </blockquote>
 
-
 <style>
 .timeline-section {
   margin-top: 1em;
@@ -164,11 +163,12 @@ redirect_from:
   max-width: 700px;
 }
 
+/* Vertical line */
 .timeline::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 4rem; /* vertical line position */
+  left: 4.5rem; /* line position */
   width: 0.125rem; /* 2px */
   height: 100%;
   background-color: #00539F; /* UD blue */
@@ -176,35 +176,37 @@ redirect_from:
 
 .timeline li {
   position: relative;
-  padding: 1em 0 1em 8rem; /* space for year + line */
+  padding: 1em 0 1em 9rem; /* space for year + line + margin */
 }
 
+/* Dot centered on line */
 .timeline li::before {
   content: '';
   position: absolute;
-  left: 3.875rem; /* center dot on line */
+  left: 4.4375rem; /* slightly left to center on 4.5rem line */
   top: 1em;
   width: 1rem;
   height: 1rem;
-  background-color: #00539F; /* UD blue */
+  background-color: #00539F;
   border-radius: 50%;
 }
 
-/* Year block wider */
+/* Year block */
 .timeline .year {
   position: absolute;
   left: 0;
-  width: 5rem; /* more space for year */
+  width: 4rem; /* more space for year */
   font-weight: bold;
   color: #00539F;
 }
 
-/* Event block narrower */
+/* Event block */
 .timeline .event {
   display: inline-block;
-  margin-left: 0; /* no extra margin */
+  margin-left: 0;
 }
 </style>
+
 
 
 
