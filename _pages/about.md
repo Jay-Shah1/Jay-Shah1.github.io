@@ -12,7 +12,7 @@ redirect_from:
 
 
 <p  style="text-align: justify;">
-  I am a Ph.D. student in Chemical Engineering at the University of Delaware, advised by Prof. Arthi Jayaraman in the <a href="https://sites.udel.edu/arthij/" target="_blank">Jayaraman Research Group</a>. My research integrates molecular modeling, atomistic and coarse-grained simulations, and machine learning to understand how molecular structure governs the dynamics and thermodynamics of next-generation polymeric materials.
+  I am a Ph.D. student in Chemical Engineering at the University of Delaware, advised by <a href="https://sites.udel.edu/arthij/" target="_blank">Prof. Arthi Jayaraman </a>. My research integrates molecular modeling, atomistic and coarse-grained simulations, and machine learning to understand how molecular structure governs the dynamics and thermodynamics of next-generation polymeric materials.
 
 </p>
 
@@ -51,33 +51,130 @@ redirect_from:
 
 <p style="margin-top: 3em;"> <b>Resume</b> in <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank">PDF</a></p> -->
 
-
-## Journey
+<b>Journey</b>
 
 <div class="timeline-section">
-  <ul>
-    <li><span class="year">Fall 2024</span><span class="event">Completed NRT training; received the “Most Engaging Student” award</span></li>
-    <li><span class="year">Fall 2024</span><span class="event">Presented research at AIChE 2024 in San Diego</span></li>
-    <li><span class="year">Fall 2024</span><span class="event">Participated in the ATOM Hackathon; team won Best Technical Project Award</span></li>
-    <li><span class="year">Fall 2024</span><span class="event">Attended the joint NRT event at Duke; won the Best Proposal Pitch Award</span></li>
-    <li><span class="year">Fall 2024</span><span class="event">Completed a graduate course in Computer Architecture</span></li>
-    <li><span class="year">Spring 2024</span><span class="event">Presented a poster at APS March Meeting, Minneapolis</span></li>
-    <li><span class="year">Fall 2023</span><span class="event">Delivered first conference talk at MRS Fall Meeting, Boston</span></li>
-    <li><span class="year">Fall 2023</span><span class="event">Awarded the Morton ’58 and Donna Collins Chemical Engineering Fellowship</span></li>
-    <li><span class="year">Fall 2023</span><span class="event">Passed the Qualifier Exam</span></li>
-    <li><span class="year">Spring 2023</span><span class="event">Joined Prof. Arthi Jayaraman’s group and the NRT-MIDAS program</span></li>
-    <li><span class="year">Fall 2022</span><span class="event">Started Ph.D. at the University of Delaware</span></li>
-    <li><span class="year">Summer 2021</span><span class="event">Worked with Prof. Ramin Moghaddass, University of Miami</span></li>
-    <li><span class="year">Spring 2020</span><span class="event">Founded the Finance Club “Annuity” at IITGN</span></li>
-    <li><span class="year">Spring 2020</span><span class="event">Served as a Council Member at IR&P, IITGN</span></li>
-    <li><span class="year">Spring 2020</span><span class="event">Began research with Prof. Kabeer Jasuja</span></li>
-    <li><span class="year">Fall 2019</span><span class="event">Organized Amalthea, IITGN’s annual technical summit</span></li>
-    <li><span class="year">Summer 2019</span><span class="event">Selected for Invent@IITGN</span></li>
-    <li><span class="year">July 2018</span><span class="event">Joined the Chemical Engineering program at IIT Gandhinagar</span></li>
+  <ul class="timeline">
+    <li>
+      <span class="year">Fall 2024</span>
+      <span class="event">Completed NRT training; received the “Most Engaging Student” award</span>
+    </li>
+    <li>
+      <span class="year">Fall 2024</span>
+      <span class="event">Presented research at AIChE 2024 in San Diego</span>
+    </li>
+    <li>
+      <span class="year">Fall 2024</span>
+      <span class="event">Participated in the ATOM Hackathon; team won Best Technical Project Award</span>
+    </li>
+    <li>
+      <span class="year">Fall 2024</span>
+      <span class="event">Attended the joint NRT event at Duke; won the Best Proposal Pitch Award</span>
+    </li>
+    <li>
+      <span class="year">Fall 2024</span>
+      <span class="event">Completed a graduate course in Computer Architecture</span>
+    </li>
+    <li>
+      <span class="year">Spring 2024</span>
+      <span class="event">Presented a poster at APS March Meeting, Minneapolis</span>
+    </li>
+    <li>
+      <span class="year">Fall 2023</span>
+      <span class="event">Delivered first conference talk at MRS Fall Meeting, Boston</span>
+    </li>
+    <li>
+      <span class="year">Fall 2023</span>
+      <span class="event">Awarded the Morton ’58 and Donna Collins Chemical Engineering Fellowship</span>
+    </li>
+    <li>
+      <span class="year">Fall 2023</span>
+      <span class="event">Passed the Qualifier Exam</span>
+    </li>
+    <li>
+      <span class="year">Spring 2023</span>
+      <span class="event">Joined Prof. Arthi Jayaraman’s group and the NRT-MIDAS program</span>
+    </li>
+    <li>
+      <span class="year">Fall 2022</span>
+      <span class="event">Started Ph.D. at the University of Delaware</span>
+    </li>
+    <li>
+      <span class="year">Summer 2021</span>
+      <span class="event">Worked with Prof. Ramin Moghaddass, University of Miami</span>
+    </li>
+    <li>
+      <span class="year">Spring 2020</span>
+      <span class="event">Founded the Finance Club “Annuity” at IITGN</span>
+    </li>
+    <li>
+      <span class="year">Spring 2020</span>
+      <span class="event">Served as a Council Member at IR&P, IITGN</span>
+    </li>
+    <li>
+      <span class="year">Spring 2020</span>
+      <span class="event">Began research with Prof. Kabeer Jasuja</span>
+    </li>
+    <li>
+      <span class="year">Fall 2019</span>
+      <span class="event">Organized Amalthea, IITGN’s annual technical summit</span>
+    </li>
+    <li>
+      <span class="year">Summer 2019</span>
+      <span class="event">Selected for Invent@IITGN</span>
+    </li>
+    <li>
+      <span class="year">July 2018</span>
+      <span class="event">Joined the Chemical Engineering program at IIT Gandhinagar</span>
+    </li>
   </ul>
 </div>
 
-<p style="margin-top: 3em;"><b>Resume</b> in <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank">PDF</a></p>
+<p style="margin-top: 3em;">
+  <b>Resume</b> in <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank">PDF</a>
+</p>
+
+<style>
+.timeline-section {
+  margin-top: 1em;
+}
+
+.timeline {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+  max-width: 700px;
+}
+
+.timeline li {
+  padding: 1em 0;
+  border-left: 2px solid #007BFF;
+  margin-left: 1em;
+  position: relative;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 1em;
+  width: 14px;
+  height: 14px;
+  background-color: #007BFF;
+  border-radius: 50%;
+}
+
+.timeline .year {
+  font-weight: bold;
+  color: #007BFF;
+  display: inline-block;
+  width: 100px;
+}
+
+.timeline .event {
+  display: inline-block;
+}
+</style>
 
 
 
