@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: Jay 
+title: Jay Shah
   
 
 
@@ -10,12 +10,20 @@ redirect_from:
   - /about.html
 ---
 
+
 <p  style="text-align: justify;">
-  I am currently a third-year PhD student at the University of Delaware, working in <a href="https://sites.udel.edu/arthij/" target="_blank">The Jayaraman Research Group</a>, led by Prof. Arthi Jayaraman. My research focuses on molecular modeling and simulations (both Atomistic and Coarse-Grained), along with machine learning, to understand the structures, dynamics, and thermodynamics of novel materials.
+  I am a Ph.D. student in Chemical Engineering at the University of Delaware, advised by Prof. Arthi Jayaraman in the <a href="https://sites.udel.edu/arthij/" target="_blank">Jayaraman Research Group</a>. My research integrates molecular modeling, atomistic and coarse-grained simulations, and machine learning to understand how molecular structure governs the dynamics and thermodynamics of next-generation polymeric materials.
+
+</p>
+
+<p>
+  I completed my B.Tech. in Chemical Engineering at IIT Gandhinagar, where I worked with <a href="https://raghavan.people.iitgn.ac.in/" target="_blank">Prof. Raghavan Ranganathan</a> and Prof. Kabeer Jasuja on computational and materials-focused projects.
+<p>
+  My research interests span molecular simulations, polymer physics, and machine learning, with an emphasis on designing and understanding advanced soft materials.
 </p>
 
 
-
+<!-- 
 ## Journey
 
 <div class="timeline-section">
@@ -41,8 +49,35 @@ redirect_from:
   </ul>
 </div>
 
-<p style="margin-top: 3em;"> <b>Resume</b> in <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank">PDF</a></p>
+<p style="margin-top: 3em;"> <b>Resume</b> in <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank">PDF</a></p> -->
 
+
+## Journey
+
+<div class="timeline-section">
+  <ul>
+    <li><span class="year">Fall 2024</span><span class="event">Completed NRT training; received the “Most Engaging Student” award</span></li>
+    <li><span class="year">Fall 2024</span><span class="event">Presented research at AIChE 2024 in San Diego</span></li>
+    <li><span class="year">Fall 2024</span><span class="event">Participated in the ATOM Hackathon; team won Best Technical Project Award</span></li>
+    <li><span class="year">Fall 2024</span><span class="event">Attended the joint NRT event at Duke; won the Best Proposal Pitch Award</span></li>
+    <li><span class="year">Fall 2024</span><span class="event">Completed a graduate course in Computer Architecture</span></li>
+    <li><span class="year">Spring 2024</span><span class="event">Presented a poster at APS March Meeting, Minneapolis</span></li>
+    <li><span class="year">Fall 2023</span><span class="event">Delivered first conference talk at MRS Fall Meeting, Boston</span></li>
+    <li><span class="year">Fall 2023</span><span class="event">Awarded the Morton ’58 and Donna Collins Chemical Engineering Fellowship</span></li>
+    <li><span class="year">Fall 2023</span><span class="event">Passed the Qualifier Exam</span></li>
+    <li><span class="year">Spring 2023</span><span class="event">Joined Prof. Arthi Jayaraman’s group and the NRT-MIDAS program</span></li>
+    <li><span class="year">Fall 2022</span><span class="event">Started Ph.D. at the University of Delaware</span></li>
+    <li><span class="year">Summer 2021</span><span class="event">Worked with Prof. Ramin Moghaddass, University of Miami</span></li>
+    <li><span class="year">Spring 2020</span><span class="event">Founded the Finance Club “Annuity” at IITGN</span></li>
+    <li><span class="year">Spring 2020</span><span class="event">Served as a Council Member at IR&P, IITGN</span></li>
+    <li><span class="year">Spring 2020</span><span class="event">Began research with Prof. Kabeer Jasuja</span></li>
+    <li><span class="year">Fall 2019</span><span class="event">Organized Amalthea, IITGN’s annual technical summit</span></li>
+    <li><span class="year">Summer 2019</span><span class="event">Selected for Invent@IITGN</span></li>
+    <li><span class="year">July 2018</span><span class="event">Joined the Chemical Engineering program at IIT Gandhinagar</span></li>
+  </ul>
+</div>
+
+<p style="margin-top: 3em;"><b>Resume</b> in <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank">PDF</a></p>
 
 
 
