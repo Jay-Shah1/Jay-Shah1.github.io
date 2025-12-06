@@ -144,9 +144,6 @@ redirect_from:
   transition: background-color 0.3s;
 }
 
-.resume-button:hover {
-  background-color: #003f7d; /* Darker blue on hover */
-}
 </style>
 
 
@@ -171,38 +168,41 @@ redirect_from:
   content: '';
   position: absolute;
   top: 0;
-  left: 60px; /* position of vertical line */
-  width: 2px;
+  left: 4rem; /* vertical line position */
+  width: 0.125rem; /* 2px */
   height: 100%;
   background-color: #00539F; /* UD blue */
 }
 
 .timeline li {
   position: relative;
-  padding: 1em 0 1em 120px; /* space for year + line */
+  padding: 1em 0 1em 8rem; /* space for year + line */
 }
 
 .timeline li::before {
   content: '';
   position: absolute;
-  left: 52px; /* center the dot on the line */
+  left: 3.875rem; /* center dot on line */
   top: 1em;
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   background-color: #00539F; /* UD blue */
   border-radius: 50%;
 }
 
+/* Year block wider */
 .timeline .year {
   position: absolute;
   left: 0;
-  width: 50px;
+  width: 5rem; /* more space for year */
   font-weight: bold;
   color: #00539F;
 }
 
+/* Event block narrower */
 .timeline .event {
   display: inline-block;
+  margin-left: 0; /* no extra margin */
 }
 </style>
 
