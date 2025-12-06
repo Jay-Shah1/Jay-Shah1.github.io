@@ -12,7 +12,7 @@ redirect_from:
 
 
 <p  style="text-align: justify;">
-  I am a Ph.D. student in Chemical Engineering at the University of Delaware, advised by <a href="https://sites.udel.edu/arthij/" target="_blank">Prof. Arthi Jayaraman </a>. My research integrates molecular modeling, atomistic and coarse-grained simulations, and machine learning to understand how molecular structure governs the dynamics and thermodynamics of next-generation polymeric materials.
+  I am a Ph.D. student in Chemical Engineering at the University of Delaware, advised by <a href="https://sites.udel.edu/arthij/" target="_blank">Prof. Arthi Jayaraman</a>. My research integrates molecular modeling, atomistic and coarse-grained simulations, and machine learning to understand how molecular structure governs the dynamics and thermodynamics of next-generation polymeric materials.
 
 </p>
 
@@ -52,7 +52,6 @@ redirect_from:
 <p style="margin-top: 3em;"> <b>Resume</b> in <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank">PDF</a></p> -->
 
 <b>Journey</b>
-
 <div class="timeline-section">
   <ul class="timeline">
     <li>
@@ -131,8 +130,30 @@ redirect_from:
 </div>
 
 <p style="margin-top: 3em;">
-  <b>Resume</b> in <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank">PDF</a>
+  <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank" class="resume-button">Resume</a>
 </p>
+
+<style>
+.resume-button {
+  background-color: #00539F; /* UD Blue */
+  color: white;
+  padding: 0.6em 1.2em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #003f7d; /* Darker blue on hover */
+}
+</style>
+
+
+<blockquote>
+  <i>"Be Kind"</i>
+</blockquote>
+
 
 <style>
 .timeline-section {
@@ -146,35 +167,45 @@ redirect_from:
   max-width: 700px;
 }
 
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 60px; /* position of vertical line */
+  width: 2px;
+  height: 100%;
+  background-color: #00539F; /* UD blue */
+}
+
 .timeline li {
-  padding: 1em 0;
-  border-left: 2px solid #007BFF;
-  margin-left: 1em;
   position: relative;
+  padding: 1em 0 1em 120px; /* space for year + line */
 }
 
 .timeline li::before {
   content: '';
   position: absolute;
-  left: -8px;
+  left: 52px; /* center the dot on the line */
   top: 1em;
-  width: 14px;
-  height: 14px;
-  background-color: #007BFF;
+  width: 16px;
+  height: 16px;
+  background-color: #00539F; /* UD blue */
   border-radius: 50%;
 }
 
 .timeline .year {
+  position: absolute;
+  left: 0;
+  width: 50px;
   font-weight: bold;
-  color: #007BFF;
-  display: inline-block;
-  width: 100px;
+  color: #00539F;
 }
 
 .timeline .event {
   display: inline-block;
 }
 </style>
+
 
 
 
