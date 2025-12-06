@@ -10,105 +10,108 @@ author_profile: true
 {% endif %}
 
 {% include base_path %}
-
 <style>
-  /* Headings */
-  h2 {
-    color: #00539F;
-    border-bottom: 2px solid #00539F;
-    padding-bottom: 0.2em;
-    margin-bottom: 1em;
-  }
+/* Headings */
+h2 {
+  color: #00539F;
+  border-bottom: 2px solid #00539F;
+  padding-bottom: 0.2em;
+  margin-bottom: 1em;
+}
 
-  section {
-    margin-top: 2em;
-  }
+section {
+  margin-top: 2em;
+}
 
-  /* Links Styling */
-  a {
-    color: #00539F;       
-    text-decoration: none; 
-  }
+/* Links Styling */
+a {
+  color: #00539F;       
+  text-decoration: none; 
+}
 
-  a:hover {
-    text-decoration: underline; 
-  }
+a:hover {
+  text-decoration: underline; 
+}
 
-  /* Conference / Journal Names */
-  .conference-name, .journal-name {
-    font-weight: bold;
-    color: #00539F; 
-    font-style: italic;
-    margin-left: 0.3em;
-  }
+/* Conference / Journal Names */
+.conference-name, .journal-name {
+  font-weight: bold;
+  color: #00539F; 
+  font-style: italic;
+  float: right;
+}
 
-  /* Lists */
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
+/* Lists */
+ol {
+  padding-left: 1.5em;
+}
 
-  ul li {
-    margin-bottom: 1em;
-  }
+ol li {
+  margin-bottom: 1em;
+}
 
-  .papers-list li {
-    margin-bottom: 0.8em;
-  }
+.paper-link, .talk-link {
+  display: block;
+  font-size: 0.95em;
+  margin-top: 0.2em;
+  color: #00539F;
+}
 </style>
 
 <section id="papers">
   <h2>Papers</h2>
-  <ul class="papers-list">
+  <ol class="papers-list">
     <li>
-      S. Akepati#, N. Gupta#, J. Shah#, S. Kronenberger, V. Venkat, R. Adhikari, S. Bianco, D. Adams, A. Jayaraman*, 
-      <span class="journal-name">ACS Measurement AU (2025)</span>, Machine‐Learning‐Based CREASE‐2D Analysis of 2D SAXS Profiles to Characterize Anisotropic Nanostructures in Soft Materials
+      S. Akepati#, N. Gupta#, J. Shah#, S. Kronenberger, V. Venkat, R. Adhikari, S. Bianco, D. Adams, A. Jayaraman*,
+      Machine‐Learning‐Based CREASE‐2D Analysis of 2D SAXS Profiles to Characterize Anisotropic Nanostructures in Soft Materials
+      <span class="journal-name">ACS Measurement AU (2025)</span>
+      <a href="https://pubs.acs.org/doi/full/10.1021/acsmeasuresciau.5c00141" class="paper-link" target="_blank">Paper</a>
     </li>
     <li>
-      Y. Saxena#, Po. Lin#, J. Shah#, T. Asamoah, G. Arya, A. Jayaraman, T. Segura*, 
-      <span class="journal-name">NeurIPS AI4MAT Workshop 2025</span>, Factorial Data-Driven Inverse Design of Granular Hydrogels for Targeted Therapeutic Release
+      Y. Saxena#, Po. Lin#, J. Shah#, T. Asamoah, G. Arya, A. Jayaraman, T. Segura*,
+      Factorial Data-Driven Inverse Design of Granular Hydrogels for Targeted Therapeutic Release
+      <span class="journal-name">NeurIPS AI4MAT Workshop 2025</span>
+      <a href="https://openreview.net/forum?id=LM7qZZprCS" class="paper-link" target="_blank">Paper</a>
     </li>
     <li>
-      J. Shah, A. Jayaraman*, 
-      <span class="journal-name">RSC Applied Polymers, (2025) 3, 453‐468</span>, Coarse‐grained molecular dynamics simulations of mixtures of polysulfamides
+      J. Shah, A. Jayaraman*,
+      Coarse‐grained molecular dynamics simulations of mixtures of polysulfamides
+      <span class="journal-name">RSC Applied Polymers, (2025) 3, 453‐468</span>
+      <a href="https://doi.org/10.1039/D4LP00362D" class="paper-link" target="_blank">Paper</a>
     </li>
     <li>
-      C. Ghoroi, J. Shah#, D. Thakar#, S. Baheti# 
-      <span class="journal-name">arXiv, 2021</span>, Process design & economics of production of p‐Aminophenol
+      C. Ghoroi, J. Shah#, D. Thakar#, S. Baheti#
+      Process design & economics of production of p‐Aminophenol
+      <span class="journal-name">arXiv, 2021</span>
+      <a href="https://arxiv.org/abs/2110.15750" class="paper-link" target="_blank">Paper</a>
     </li>
-  </ul>
+  </ol>
 </section>
-
 
 <section id="talks">
   <h2>Talks / Conferences</h2>
-  <ul class="talks-list">
+  <ol class="talks-list">
     <li>
-      <strong>Presentation:</strong> 
-      <a href="https://aiche.confex.com/aiche/2024/meetingapp.cgi/Paper/688009" target="_blank">
-        Understanding Self-Assembly of Polysulfamides from Molecular Dynamics Simulations Using Atomistically-Informed Coarse Grained Models
-      </a> 
-      <span class="conference-name">AIChE Fall Meeting</span>, 2024
+      Understanding Self-Assembly of Polysulfamides from Molecular Dynamics Simulations Using Atomistically-Informed Coarse Grained Models
+      <span class="conference-name">AIChE Fall Meeting, 2024</span>
+      <a href="https://aiche.confex.com/aiche/2024/meetingapp.cgi/Paper/688009" class="talk-link" target="_blank">Talk</a>
     </li>
     <li>
-      <strong>Presentation:</strong> 
-      3-min Presentation at <span class="conference-name">Duke University</span>, 2024
+      3-min Presentation at Duke University
+      <span class="conference-name">Duke University, 2024</span>
+      <a href="#" class="talk-link" target="_blank">Talk</a>
     </li>
     <li>
-      <strong>Poster:</strong> 
-      <a href="https://meetings.aps.org/Meeting/MAR24/Session/N00.19" target="_blank">
-        Linking Polysulfamide Design to Morphology Using Molecular Simulation and Machine Learning
-      </a> 
-      <span class="conference-name">APS March Meeting</span>, 2024
+      Linking Polysulfamide Design to Morphology Using Molecular Simulation and Machine Learning
+      <span class="conference-name">APS March Meeting, 2024</span>
+      <a href="https://meetings.aps.org/Meeting/MAR24/Session/N00.19" class="talk-link" target="_blank">Poster</a>
     </li>
     <li>
-      <strong>Presentation:</strong> 
-      <a href="https://www.mrs.org/meetings-events/annual-meetings/archive/meeting/presentations/view/2023-mrs-fall-meeting/2023-mrs-fall-meeting-3954739" target="_blank">
-        Computational Studies to Understand the Effect of Polysulfamide Designs on Structure and Properties 
-      </a> 
-      <span class="conference-name">MRS Fall Meeting</span>, 2023
+      Computational Studies to Understand the Effect of Polysulfamide Designs on Structure and Properties
+      <span class="conference-name">MRS Fall Meeting, 2023</span>
+      <a href="https://www.mrs.org/meetings-events/annual-meetings/archive/meeting/presentations/view/2023-mrs-fall-meeting/2023-mrs-fall-meeting-3954739" class="talk-link" target="_blank">Talk</a>
     </li>
-  </ul>
+  </ol>
 </section>
 
 
