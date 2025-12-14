@@ -2,15 +2,15 @@
    SINGLE PAGE/POST
    ========================================================================== */
 
-  #main {
-   @include container;
-   @include clearfix;
-   /* Center the main container horizontally on larger viewports */
-   margin: 2em auto;
-   max-width: $x-large;
-
-   animation: intro 0.3s both;
-   animation-delay: 0.35s;
+   #main {
+    @include container;
+    @include clearfix;
+    margin-top: 2em;
+    margin-left: 8em;
+    margin-right: 8em;
+    
+    animation: intro 0.3s both;
+    animation-delay: 0.35s;
   
     @include breakpoint($x-large) {
       max-width: $x-large;
