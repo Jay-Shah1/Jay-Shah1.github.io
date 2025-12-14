@@ -165,7 +165,7 @@ redirect_from:
 /* Year block */
 .timeline .year {
   display: inline-block;
-  width: 4rem; /* space for year */
+  width: 8rem; /* space for year */
   font-weight: bold;
   color: #00539F;
   text-align: right; /* align year to the right */
