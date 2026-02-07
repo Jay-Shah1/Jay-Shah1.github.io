@@ -19,11 +19,11 @@
     overflow-y: auto;               // Add scrollbar if the sidebar is too long
     position: fixed;
     padding-top: $masthead-height;
+    padding-right: 0.5rem; // small right padding to separate from content
   }
 
   @include breakpoint($large) {
     @include span(2 of 12);
-    min-width: 200px; /* prevent sidebar (and avatar) from being cut when resizing */
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -35,7 +35,7 @@
 
   @include breakpoint($x-large) {
     max-width: $sidebar-link-max-width;
-    padding-right: 0;
+    padding-right: 0.5rem; // maintain a small right padding on very large screens
   }
 
   h2, h3, h4, h5, h6 {
@@ -82,30 +82,29 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
-  min-width: 36px;
-  overflow: visible;
+  // set width only, for non-square avatars
+  // height: 36px;
 
   @include breakpoint($large) {
     display: block;
-    width: 100%;
-    max-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    height: auto;
   }
 
   img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
+    max-width: 175px;
     border-radius: 50%;
+    width: 36px;
+    height: 36px;
     object-fit: cover;
 
     @include breakpoint($large) {
+      /* keep avatar circular at larger sizes but allow larger max width if needed */
+      width: 48px;
+      height: 48px;
+      max-width: 175px;
       border: none;
-      /* Override inline fixed size so avatar scales with sidebar and is never cut */
-      max-width: 100% !important;
-      width: auto !important;
-      height: auto !important;
+      border-radius: 50%;
     }
   }
 }
