@@ -16,9 +16,9 @@ redirect_from:
 
 </p>
 
-<p>
+<p style="text-align: justify;">
   I completed my B.Tech. in Chemical Engineering at IIT Gandhinagar, where I worked with <a href="https://raghavan.people.iitgn.ac.in/" target="_blank">Prof. Raghavan Ranganathan</a> and Prof. Kabeer Jasuja on computational and materials-focused projects.
-<p>
+<p style="text-align: justify;">
   My research interests span molecular simulations, polymer physics, and machine learning, with an emphasis on designing and understanding advanced soft materials.
 </p>
 
@@ -26,6 +26,7 @@ redirect_from:
 
 
 <!-- Section about projects -->
+<h2 class="section-title">Research</h2>
 
 <!-- Section about projects -->
 <section class="projects-section">
@@ -141,7 +142,17 @@ redirect_from:
 
 
 <!-- Section about journeys -->
-<b>Journey</b>
+<h2 class="section-title">Journey</h2>
+
+<style>
+.section-title {
+  font-size: 2em;       /* bigger text */
+  margin-top: 2em;      /* space above */
+  margin-bottom: 1em;   /* optional: space below */
+  font-weight: bold;    /* bold like <b> */
+}
+</style>
+
 <div class="timeline-section">
   <ul class="timeline">
     <li>

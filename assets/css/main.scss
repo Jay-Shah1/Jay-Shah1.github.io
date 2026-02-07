@@ -101,38 +101,56 @@
   }
 }
 
-/* Global container: centers content on all pages, responsive padding */
+/* Global container: centers content, consistent responsive padding */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.25em;
+  padding: 0 2rem;
   box-sizing: border-box;
 }
 
-/* Navigation bar: same padding as main content */
+/* Navigation bar: same horizontal padding as main content */
 .masthead .container {
-  padding-left: 1.25em;
-  padding-right: 1.25em;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 0.75em;
+    padding: 0 1.25rem;
   }
   .masthead .container {
-    padding-left: 0.75em;
-    padding-right: 0.75em;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 0.6em;
+    padding: 0 1rem;
   }
   .masthead .container {
-    padding-left: 0.6em;
-    padding-right: 0.6em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
+}
+
+/* Section spacing for clarity */
+.section-title,
+.projects-section,
+.timeline-section {
+  margin-top: 1.5rem;
+}
+
+.projects-section {
+  padding-bottom: 0.5rem;
+  gap: 1.75rem;
 }
 
 
