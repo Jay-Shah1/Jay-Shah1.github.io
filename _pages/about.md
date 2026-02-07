@@ -22,35 +22,70 @@ redirect_from:
   My research interests span molecular simulations, polymer physics, and machine learning, with an emphasis on designing and understanding advanced soft materials.
 </p>
 
+<p>More about me in my <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf">resume</a>.</p>
 
-<!-- 
-## Journey
 
-<div class="timeline-section">
-  <ul>
-    <li><span class="year">Fall 2024</span><span class="event">Completed NRT training; received "Most Engaging Student" award</span></li>
-    <li><span class="year">Fall 2024</span><span class="event">Presented at AIChE 2024, San Diego</span></li>
-    <li><span class="year">Fall 2024</span><span class="event">Participated in ATOM Hackathon and the team won best technical project award </span></li>
-    <li><span class="year">Fall 2024</span><span class="event">Attended joint NRT event at Duke; won Best Proposal Pitch Award</span></li>
-    <li><span class="year">Fall 2024</span><span class="event">Took Computer Architecture course</span></li>
-    <li><span class="year">Spring 2024</span><span class="event">Presented poster at APS March Meeting, Minneapolis</span></li>
-    <li><span class="year">Fall 2023</span><span class="event">Presented at first conference, MRS Fall Meeting, Boston</span></li>
-    <li><span class="year">Fall 2023</span><span class="event">Awarded Morton '58 and Donna Collins Chemical Engineering Fellowship</span></li>
-    <li><span class="year">Fall 2023</span><span class="event">Passed my Qualifier Exam</span></li>
-    <li><span class="year">Spring 2023</span><span class="event">Joined Prof. Arthi Jayaraman's Lab and NRT-MIDAS</span></li>
-    <li><span class="year">Fall 2022</span><span class="event">Started PhD at University of Delaware</span></li>
-    <li><span class="year">Summer 2021</span><span class="event">Worked with Prof. Ramin Moghaddass, University of Miami</span></li>
-    <li><span class="year">Spring 2020</span><span class="event">Founded Finance Club, Annuity at IITGN</span></li>
-    <li><span class="year">Spring 2020</span><span class="event">Council Member at IR&P, IITGN</span></li>
-    <li><span class="year">Spring 2020</span><span class="event">Started research with Prof. Kabeer Jasuja</span></li>
-    <li><span class="year">Fall 2019</span><span class="event">Helped organize Amalthea, IITGN Technical Summit</span></li>
-    <li><span class="year">Summer 2019</span><span class="event">Selected for Invent@IITGN</span></li>
-    <li><span class="year">July 2018</span><span class="event">Joined Chemical Engineering at IIT Gandhinagar</span></li>
-  </ul>
-</div>
+<!-- Section about projects -->
 
-<p style="margin-top: 3em;"> <b>Resume</b> in <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank">PDF</a></p> -->
+<!-- Section about projects -->
+<section class="projects-section">
+  <div class="project">
+    <div class="project-image">
+      <img src="{{ base_path }}/images/RSC_CG.png" alt="Project Image">
+    </div>
+    <div class="project-info">
+      <h3>Coarse-grained molecular dynamics simulations of mixtures of polysulfamides</h3>
+      <p><em>Publication: RSC Applied Polymers, 2025</em></p>
+    </div>
+  </div>
+</section>
 
+<style>
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2em; /* space between projects */
+}
+
+/* Single project layout */
+.project {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+/* Left image: 30% */
+.project-image {
+  flex: 0 0 30%;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px; /* optional: rounded corners */
+  object-fit: cover;
+}
+
+/* Right info: 70% */
+.project-info {
+  flex: 0 0 70%;
+}
+
+.project-info h3 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.2em;
+}
+
+.project-info p {
+  margin: 0;
+  font-size: 0.95em;
+  color: #555;
+}
+</style>
+
+
+
+<!-- Section about journeys -->
 <b>Journey</b>
 <div class="timeline-section">
   <ul class="timeline">
@@ -128,23 +163,6 @@ redirect_from:
     </li>
   </ul>
 </div>
-
-<p style="margin-top: 3em;">
-  <a href="{{ base_path }}/files/Resume_Jay_Shah.pdf" target="_blank" class="resume-button">Resume</a>
-</p>
-
-<style>
-.resume-button {
-  background-color: #00539F; /* UD Blue */
-  color: white;
-  padding: 0.6em 1.2em;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
-  transition: background-color 0.3s;
-}
-
-</style>
 
 
 <blockquote>
