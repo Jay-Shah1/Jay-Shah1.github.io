@@ -62,7 +62,7 @@
   
     h2 {
       padding-bottom: 0.5em;
-      border-bottom: 1px solid var(--global-border-color);
+      border-bottom: none;
     }
   
     p, li, dl {
@@ -87,10 +87,6 @@
   
       &:hover {
         text-decoration: underline;
-  
-        img {
-          box-shadow: 0 0 10px rgba(#000, 0.25);
-        }
       }
     }
   
@@ -119,30 +115,28 @@
   
   .page__hero {
     position: relative;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     @include clearfix;
     animation: intro 0.3s both;
     animation-delay: 0.25s;
   
     &--overlay {
       position: relative;
-      margin-bottom: 2em;
-      padding: 3em 0;
+      margin-bottom: 1em;
+      padding: 0;
       @include clearfix;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+      background: #fff !important;
+      background-image: none !important;
       animation: intro 0.3s both;
       animation-delay: 0.25s;
   
       a {
-        color: #fff;
+        color: var(--global-link-color);
       }
   
       .wrapper {
-        padding-left: 1em;
-        padding-right: 1em;
-  
+        padding-left: 0;
+        padding-right: 0;
         @include breakpoint($x-large) {
           max-width: $x-large;
         }
@@ -152,8 +146,8 @@
       .page__meta,
       .page__lead,
       .btn {
-        color: #fff;
-        text-shadow: 1px 1px 4px rgba(#000, 0.5);
+        color: var(--global-text-color);
+        text-shadow: none;
       }
   
       .page__lead {
@@ -162,7 +156,6 @@
   
       .page__title {
         font-size: $type-size-2;
-  
         @include breakpoint($small) {
           font-size: $type-size-1;
         }
@@ -171,6 +164,7 @@
   }
   
   .page__hero-image {
+    display: none; /* no image banners - minimalist */
     width: 100%;
     height: auto;
     -ms-interpolation-mode: bicubic;
@@ -182,14 +176,14 @@
     right: 0;
     margin: 0 auto;
     padding: 2px 5px;
-    color: #fff;
+    color: var(--global-text-color-light);
     font-family: $caption-font-family;
     font-size: $type-size-7;
-    background: #000;
+    background: transparent;
     text-align: right;
     z-index: 5;
-    opacity: 0.5;
-    border-radius: $border-radius 0 $border-radius 0;
+    opacity: 0.8;
+    border-radius: 0;
   
     @include breakpoint($large) {
       padding: 5px 10px;
@@ -208,7 +202,7 @@
   .page__share {
     margin-top: 2em;
     padding-top: 1em;
-    border-top: 1px solid var(--global-border-color);
+    border-top: none;
   
     @include breakpoint(max-width $small) {
       .btn span {
@@ -275,10 +269,10 @@
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 8px;
-    padding: 5px 10px;
+    padding: 0;
     text-decoration: none;
-    border: 1px solid var(--global-border-color);
-    border-radius: $border-radius;
+    border: none;
+    border-radius: 0;
   
     &:hover {
       text-decoration: none;
@@ -300,13 +294,13 @@
     margin-bottom: 10px;
     padding-top: 2rem;
     font-size: $type-size-6;
-    border-top: 1px solid var(--global-border-color);
+    border-top: none;
     text-transform: uppercase;
   }
   
   .page__comments-form {
-    padding: 1em;
-    background: var(--global-border-color);
+    padding: 1em 0;
+    background: transparent;
     transition: $global-transition;
   
     &.disabled {
@@ -328,7 +322,7 @@
     margin: 1em 0;
   
     &:not(:last-child) {
-      border-bottom: 1px solid var(--global-border-color);
+      border-bottom: none;
     }
   }
   
@@ -351,8 +345,8 @@
     @include breakpoint($large) {
       width: 80px;
       height: 80px;
-      padding: 5px;
-      border: 1px solid var(--global-border-color);
+      padding: 0;
+      border: none;
     }
   }
   
@@ -390,7 +384,7 @@
   .page__related {
     margin-top: 2em;
     padding-top: 1em;
-    border-top: 1px solid var(--global-border-color);
+    border-top: none;
     @include clearfix();
     float: left;
   

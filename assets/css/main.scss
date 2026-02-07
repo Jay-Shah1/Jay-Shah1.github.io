@@ -42,11 +42,11 @@
 ;
 
 .timeline-section {
-  max-height: 250px;  /* Set the max height */
-  overflow-y: auto;   /* Enable vertical scrolling */
-  border: 1px solid #ddd;
-  padding: 10px;
-  background-color: #f9f9f9;
+  max-height: 250px;
+  overflow-y: auto;
+  border: none;
+  padding: 0;
+  background-color: #fff;
   font-size: 14px;
   line-height: 1.6;
   font-family: Arial, sans-serif;
@@ -78,9 +78,9 @@
 }
 
 .typewriter {
-  display: block; /* Ensures it's a block element */
-  overflow: hidden; 
-  border-right: 4px solid black;
+  display: block;
+  overflow: hidden;
+  border-right: 4px solid #00539f;
   white-space: nowrap;
   width: 0;
   animation: typing 3s steps(80) 1s forwards, blink 0.75s step-end infinite;
