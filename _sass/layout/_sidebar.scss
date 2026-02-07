@@ -23,6 +23,7 @@
 
   @include breakpoint($large) {
     @include span(2 of 12);
+    min-width: 200px; /* prevent sidebar (and avatar) from being cut when resizing */
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -81,21 +82,30 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
-  // set width only, for non-square avatars
-  // height: 36px;
+  min-width: 36px;
+  overflow: visible;
 
   @include breakpoint($large) {
     display: block;
-    width: auto;
-    height: auto;
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   img {
-    max-width: 175px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
     border-radius: 50%;
+    object-fit: cover;
 
     @include breakpoint($large) {
       border: none;
+      /* Override inline fixed size so avatar scales with sidebar and is never cut */
+      max-width: 100% !important;
+      width: auto !important;
+      height: auto !important;
     }
   }
 }

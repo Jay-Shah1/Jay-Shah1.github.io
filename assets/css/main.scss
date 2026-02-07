@@ -114,6 +114,23 @@
   padding: 0 2rem;
 }
 
+/* Align nav with sidebar + main: site title in 2/12, links in 10/12 (when sidebar visible) */
+@media (min-width: 925px) {
+  .masthead .masthead__menu .greedy-nav .visible-links {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .masthead .masthead__menu .greedy-nav .visible-links > li:first-child {
+    flex: 0 0 16.666%; /* 2/12 - matches sidebar width */
+    min-width: 0;
+  }
+  .masthead .masthead__menu .greedy-nav .visible-links > li:not(:first-child) {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 1.25rem;
