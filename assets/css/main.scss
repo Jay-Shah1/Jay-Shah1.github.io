@@ -109,15 +109,29 @@
   box-sizing: border-box;
 }
 
+/* Navigation bar: same padding as main content */
+.masthead .container {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 0.75em;
+  }
+  .masthead .container {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
   }
 }
 
 @media (max-width: 480px) {
   .container {
     padding: 0 0.6em;
+  }
+  .masthead .container {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
   }
 }
 
