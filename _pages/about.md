@@ -55,7 +55,7 @@ redirect_from:
     </div>
     <div class="project-info">
       <h3>
-        <a href="https://doi.org/10.1039/D4LP00362D" target="_blank" class="project-link">
+        <a href="https://neurips.cc/virtual/2025/loc/san-diego/129386" target="_blank" class="project-link">
           Factorial Data-Driven Inverse Design of Granular Hydrogels for Targeted Therapeutic Release
         </a>
       </h3>
@@ -146,7 +146,7 @@ redirect_from:
 
 <style>
 .section-title {
-  font-size: 2em;       /* bigger text */
+  font-size: 1.5em;       /* bigger text */
   margin-top: 2em;      /* space above */
   margin-bottom: 1em;   /* optional: space below */
   font-weight: bold;    /* bold like <b> */
