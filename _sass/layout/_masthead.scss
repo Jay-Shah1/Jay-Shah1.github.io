@@ -22,22 +22,8 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: $x-large;
-    padding: 1em;
     font-family: $sans-serif-narrow;
-    box-sizing: border-box;
-
-    @include breakpoint($small) {
-      padding-left: 1.5em;
-      padding-right: 1.5em;
-    }
-
-    @include breakpoint($medium) {
-      padding-left: 2em;
-      padding-right: 2em;
-    }
+    /* .container class handles max-width, centering, and responsive padding */
 
     nav {
       z-index: 10;

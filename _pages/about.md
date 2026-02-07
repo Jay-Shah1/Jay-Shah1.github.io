@@ -29,15 +29,58 @@ redirect_from:
 
 <!-- Section about projects -->
 <section class="projects-section">
+
+  
+  <!-- Project 2 -->
+  <div class="project">
+    <div class="project-image">
+      <img src="{{ base_path }}/images/Melt_PS_PU.png" alt="Project Image">
+    </div>
+    <div class="project-info">
+      <h3>
+        <a href="" target="_blank" class="project-link">
+          Comparison of Structure and Properties of Polysulfamide and Polyurea Melts: A Coarse - Grained Simulation Study
+        </a>
+      </h3>
+      <p><em>Publication: RSC Applied Polymers (Submitted), 2026</em></p>
+      <p><em><b>Jay Shah</b>, Arthi Jayaraman</em></p>
+    </div>
+  </div>
+
+  <!-- Project 1 -->
+  <div class="project">
+    <div class="project-image">
+      <img src="{{ base_path }}/images/Neurips.png" alt="Project Image">
+    </div>
+    <div class="project-info">
+      <h3>
+        <a href="https://doi.org/10.1039/D4LP00362D" target="_blank" class="project-link">
+          Factorial Data-Driven Inverse Design of Granular Hydrogels for Targeted Therapeutic Release
+        </a>
+      </h3>
+      <p><em>Publication: AI for Accelerated Materials Design-NeurIPS, 2025</em></p>
+      <p><em>Yasha Saxena#, Po-An Lin#, <b>Jay Shah#</b>, Tracy Asamoah, Arthi Jayaraman, Gaurav Arya, Tatiana Segura</em></p>
+    </div>
+  </div>
+
+
+  <!-- Project 1 -->
   <div class="project">
     <div class="project-image">
       <img src="{{ base_path }}/images/RSC_CG.png" alt="Project Image">
     </div>
     <div class="project-info">
-      <h3>Coarse-grained molecular dynamics simulations of mixtures of polysulfamides</h3>
+      <h3>
+        <a href="https://doi.org/10.1039/D4LP00362D" target="_blank" class="project-link">
+          Coarse-Grained Molecular Dynamics Simulations of Polysulfamide Mixtures
+        </a>
+      </h3>
       <p><em>Publication: RSC Applied Polymers, 2025</em></p>
+      <p><em><b>Jay Shah</b>, Arthi Jayaraman</em></p>
     </div>
   </div>
+
+
 </section>
 
 <style>
@@ -81,7 +124,19 @@ redirect_from:
   font-size: 0.95em;
   color: #555;
 }
+
+/* Link hover effect */
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: #00539F;
+}
 </style>
+
 
 
 
