@@ -105,19 +105,19 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2em;
+  padding: 0 1.25em;
   box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 1em;
+    padding: 0 0.75em;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 0.8em;
+    padding: 0 0.6em;
   }
 }
 
