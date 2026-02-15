@@ -26,7 +26,7 @@ redirect_from:
 
 
 <!-- Section about projects -->
-<h2 class="section-title">Research</h2>
+<h2 class="section-title">Highlighted Research</h2>
 
 <!-- Section about projects -->
 <section class="projects-section">

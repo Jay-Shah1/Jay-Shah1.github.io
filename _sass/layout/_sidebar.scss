@@ -11,8 +11,10 @@
   -webkit-transform: translate3d(0, 0 , 0);
           transform: translate3d(0, 0 , 0);
 
+
   @include clearfix();
   margin-bottom: 1em;
+  padding-right: 1rem; // small right padding to separate from content
 
   @media screen and (min-width: $sidebar-screen-min-width) {
     height: 100vh;
@@ -35,7 +37,7 @@
 
   @include breakpoint($x-large) {
     max-width: $sidebar-link-max-width;
-    padding-right: 0.5rem; // maintain a small right padding on very large screens
+    padding-right: 1rem; // maintain a small right padding on very large screens
   }
 
   h2, h3, h4, h5, h6 {
