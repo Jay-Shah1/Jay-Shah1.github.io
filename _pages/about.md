@@ -65,6 +65,7 @@ redirect_from:
 <h2>Journey</h2>
 
 <ul class="timeline timeline--scroll" tabindex="0" aria-label="Journey timeline">
+  <li><span class="year">Summer 2026</span><span class="event">Internship at Apple, Display Module team</span></li>
   <li><span class="year">Fall 2025</span><span class="event">Attended AIChE 2025</span></li>
   <li><span class="year">Fall 2024</span><span class="event">Completed NRT training; “Most Engaging Student” award</span></li>
   <li><span class="year">Fall 2024</span><span class="event">Presented at AIChE 2024, San Diego</span></li>
