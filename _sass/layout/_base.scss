@@ -5,6 +5,8 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+  /* reserve scrollbar space so short and long pages line up identically */
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -30,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   font-family: $header-font-family;
   font-weight: bold;
+  color: var(--global-heading-color);
 }
 
 h1 {
@@ -118,6 +121,9 @@ blockquote {
 /* links */
 
 a {
+  color: var(--global-link-color);
+  text-decoration: none;
+
   &:focus {
     @extend %tab-focus;
   }
@@ -125,6 +131,8 @@ a {
   &:hover,
   &:active {
     outline: 0;
+    color: var(--global-link-color-hover);
+    text-decoration: underline;
   }
 }
 

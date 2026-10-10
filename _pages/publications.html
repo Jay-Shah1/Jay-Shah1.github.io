@@ -6,149 +6,70 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <p>Also on <a href="{{site.author.googlescholar}}">Google Scholar</a>.</p>
 {% endif %}
 
 {% include base_path %}
-<style>
-/* Headings */
-h2 {
-  color: #00539F;
-  border-bottom: 2px solid #00539F;
-  padding-bottom: 0.2em;
-  margin-bottom: 1em;
-}
-
-section {
-  margin-top: 2em;
-}
-
-/* Conference / Journal Names */
-.conference-name, .journal-name {
-  font-weight: bold;
-  color: #00539F; 
-  font-style: italic;
-  margin-left: 0.5em;
-}
-
-/* Lists */
-ol {
-  padding-left: 1.5em;
-}
-
-ol li {
-  margin-bottom: 1em;
-  line-height: 1.4;
-}
-
-/* Bold your name */
-.bold-name {
-  font-weight: bold;
-}
-
-/* Button style for links */
-.paper-link, .talk-link {
-  display: inline-block;
-  margin-top: 0.3em;
-  padding: 0.35em 0.75em;
-  background-color: #00539F; /* UD blue */
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 0.95em;
-  font-weight: bold;
-}
-
-.paper-link:hover, .talk-link:hover {
-  color: white; /* no change on hover */
-  background-color: #00539F; /* no change on hover */
-}
-</style>
 
 <section id="papers">
   <h2>Papers</h2>
-  <ol class="papers-list">
+  <ol class="pub-list">
     <li>
-      S. Akepati#, N. Gupta#, <span class="bold-name">J. Shah#</span>, S. Kronenberger, V. Venkat, R. Adhikari, S. Bianco, D. Adams, A. Jayaraman*,
-      Machine‐Learning‐Based CREASE‐2D Analysis of 2D SAXS Profiles to Characterize Anisotropic Nanostructures in Soft Materials
-      <span class="journal-name">ACS Measurement AU (2025)</span>
-      <a href="https://pubs.acs.org/doi/full/10.1021/acsmeasuresciau.5c00141" class="paper-link" target="_blank">Paper</a>
+      S. Akepati#, N. Gupta#, <b>J. Shah#</b>, S. Kronenberger, V. Venkat, R. Adhikari, S. Bianco, D. Adams, A. Jayaraman*,
+      Machine‐Learning‐Based CREASE‐2D Analysis of 2D SAXS Profiles to Characterize Anisotropic Nanostructures in Soft Materials.
+      <span class="venue">ACS Measurement Science Au, 2025</span>
+      <a href="https://pubs.acs.org/doi/full/10.1021/acsmeasuresciau.5c00141" target="_blank">Paper</a>
     </li>
     <li>
-      Y. Saxena#, Po. Lin#, <span class="bold-name">J. Shah#</span>, T. Asamoah, G. Arya, A. Jayaraman, T. Segura*,
-      Factorial Data-Driven Inverse Design of Granular Hydrogels for Targeted Therapeutic Release
-      <span class="journal-name">NeurIPS AI4MAT Workshop 2025</span>
-      <a href="https://openreview.net/forum?id=LM7qZZprCS" class="paper-link" target="_blank">Paper</a>
+      Y. Saxena#, P. Lin#, <b>J. Shah#</b>, T. Asamoah, G. Arya, A. Jayaraman, T. Segura*,
+      Factorial Data-Driven Inverse Design of Granular Hydrogels for Targeted Therapeutic Release.
+      <span class="venue">NeurIPS AI4MAT Workshop, 2025</span>
+      <a href="https://openreview.net/forum?id=LM7qZZprCS" target="_blank">Paper</a>
     </li>
     <li>
-      <span class="bold-name">J. Shah</span>, A. Jayaraman*,
-      Coarse‐grained molecular dynamics simulations of mixtures of polysulfamides
-      <span class="journal-name">RSC Applied Polymers, (2025) 3, 453‐468</span>
-      <a href="https://doi.org/10.1039/D4LP00362D" class="paper-link" target="_blank">Paper</a>
+      <b>J. Shah</b>, A. Jayaraman*,
+      Coarse‐grained molecular dynamics simulations of mixtures of polysulfamides.
+      <span class="venue">RSC Applied Polymers, 2025, 3, 453‐468</span>
+      <a href="https://doi.org/10.1039/D4LP00362D" target="_blank">Paper</a>
     </li>
     <li>
-      C. Ghoroi, <span class="bold-name">J. Shah#</span>, D. Thakar#, S. Baheti#
-      Process design & economics of production of p‐Aminophenol
-      <span class="journal-name">arXiv, 2021</span>
-      <a href="https://arxiv.org/abs/2110.15750" class="paper-link" target="_blank">Paper</a>
+      C. Ghoroi, <b>J. Shah#</b>, D. Thakar#, S. Baheti#,
+      Process design &amp; economics of production of p‐Aminophenol.
+      <span class="venue">arXiv, 2021</span>
+      <a href="https://arxiv.org/abs/2110.15750" target="_blank">Paper</a>
     </li>
   </ol>
 </section>
 
 <section id="talks">
-  <h2>Talks / Conferences</h2>
-  <ol class="talks-list">
+  <h2>Talks &amp; Posters</h2>
+  <ol class="pub-list">
     <li>
-      <span class="bold-name">J. Shah</span>, Z. Wu, A. Jayaraman*, Understanding Self-Assembly of Polysulfamides from Molecular Dynamics Simulations Using Atomistically-Informed Coarse Grained Models
-      <span class="conference-name">AIChE Fall Meeting, 2024</span>
-      <a href="https://aiche.confex.com/aiche/2024/meetingapp.cgi/Paper/688009" class="talk-link" target="_blank">Talk</a>
+      <b>J. Shah</b>, Z. Wu, A. Jayaraman*,
+      Understanding Self-Assembly of Polysulfamides from Molecular Dynamics Simulations Using Atomistically-Informed Coarse Grained Models.
+      <span class="venue">AIChE Annual Meeting, 2024</span>
+      <a href="https://aiche.confex.com/aiche/2024/meetingapp.cgi/Paper/688009" target="_blank">Talk</a>
     </li>
     <li>
-      <span class="bold-name">J. Shah</span>, A. Jayaraman*, 3-min Presentation at Duke University
-      <span class="conference-name">Duke University, 2024</span>
-      <a href="#" class="talk-link" target="_blank">Talk</a>
+      <b>J. Shah</b>, A. Jayaraman*,
+      3-minute research presentation.
+      <span class="venue">Duke University, 2024</span>
     </li>
     <li>
-      <span class="bold-name">J. Shah#</span>, A. Paruchuri#, L. Nagidi, S. Lu, A. Jayaraman, Linking Polysulfamide Design to Morphology Using Molecular Simulation and Machine Learning
-      <span class="conference-name">APS March Meeting, 2024</span>
-      <a href="https://meetings.aps.org/Meeting/MAR24/Session/N00.19" class="talk-link" target="_blank">Poster</a>
+      <b>J. Shah#</b>, A. Paruchuri#, L. Nagidi, S. Lu, A. Jayaraman,
+      Linking Polysulfamide Design to Morphology Using Molecular Simulation and Machine Learning.
+      <span class="venue">APS March Meeting, 2024</span>
+      <a href="https://meetings.aps.org/Meeting/MAR24/Session/N00.19" target="_blank">Poster</a>
     </li>
     <li>
-      <span class="bold-name">J. Shah</span>, Z. Wu, A. Jayaraman*, Computational Studies to Understand the Effect of Polysulfamide Designs on Structure and Properties
-      <span class="conference-name">MRS Fall Meeting, 2023</span>
-      <a href="https://www.mrs.org/meetings-events/annual-meetings/archive/meeting/presentations/view/2023-mrs-fall-meeting/2023-mrs-fall-meeting-3954739" class="talk-link" target="_blank">Talk</a>
+      <b>J. Shah</b>, Z. Wu, A. Jayaraman*,
+      Computational Studies to Understand the Effect of Polysulfamide Designs on Structure and Properties.
+      <span class="venue">MRS Fall Meeting, 2023</span>
+      <a href="https://www.mrs.org/meetings-events/annual-meetings/archive/meeting/presentations/view/2023-mrs-fall-meeting/2023-mrs-fall-meeting-3954739" target="_blank">Talk</a>
     </li>
   </ol>
 </section>
 
+<p class="pub-note"># equal contribution &nbsp;·&nbsp; * corresponding author</p>
 
-
-<blockquote>
-  <i>"Be the change you want to see in the world"</i>
-</blockquote>
-
-
-
-<!-- New style rendering if publication categories are defined -->
-<!-- {% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %} -->
-
-
-
+<blockquote class="page-quote">“Be the change you want to see in the world”</blockquote>

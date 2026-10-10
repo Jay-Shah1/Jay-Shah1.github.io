@@ -11,19 +11,18 @@
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
-    	<img src="https://Jay-Shah1.github.io/images/profile_main.jpg" class="author__avatar" alt="{{ author.name }}" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%;display: block; margin-left: auto; margin-right: auto;">
+    	<img src="https://Jay-Shah1.github.io/images/profile_main.jpg" class="author__avatar author__avatar-img" alt="{{ author.name }}">
     {% endif %}
   </div>
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-    {% if author.bio %}<p class="author__bio" style="padding-right: 0.5rem;">{{ author.bio }}</p>{% endif %}
+    <p class="author__name-devanagari" lang="hi">जय शाह</p>    {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
+    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
   
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}

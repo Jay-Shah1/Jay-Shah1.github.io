@@ -41,107 +41,602 @@
     "vendor/magnific-popup/magnific-popup"
 ;
 
-.timeline-section {
-  max-height: 250px;
-  overflow-y: auto;
-  border: none;
-  padding: 0;
-  background-color: #fff;
-  font-size: 14px;
-  line-height: 1.6;
-  font-family: Arial, sans-serif;
+/* ==========================================================================
+   Minimal, calm, content-first
+   ========================================================================== */
+
+$rule-color: #e6e8ea;
+$muted: #6b7075;
+
+/* No entrance animations: content is simply there */
+#main,
+.masthead {
+  animation: none !important;
 }
 
-.timeline-section ul {
-  list-style-type: none; /* Removes default bullets */
+/* Left-aligned text reads more evenly than justified */
+.page__content p,
+.archive p {
+  text-align: left;
+}
+
+/* Section headings: quiet hairline instead of a heavy bar */
+.page__content h2,
+.archive h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid $rule-color;
+}
+
+.page__content h2:first-child,
+.archive section:first-of-type h2 {
+  margin-top: 0.5rem;
+}
+
+/* Links read as text: color only, underline on hover */
+.archive a,
+.page__content a {
+  text-decoration: none;
+}
+
+.archive a:hover,
+.page__content a:hover {
+  text-decoration: underline;
+}
+
+/* Secondary information (venues, collaborators, captions) */
+.project-meta,
+.entry-meta,
+.venue,
+.pub-note,
+.gallery figcaption {
+  color: $muted;
+}
+
+/* --- Home: highlighted research --- */
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.25rem;
+}
+
+.project {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.project-image {
+  flex: 0 0 36%;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-info {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.project-info h3 {
+  margin: 0 0 0.4rem;
+}
+
+.project-info h3 a {
+  color: inherit;
+}
+
+.project-meta {
+  margin: 0 !important;
+}
+
+/* --- Dated lists: Journey (home) and Teaching --- */
+.timeline,
+.dated-list {
+  list-style: none;
+  margin: 1rem 0 0;
   padding: 0;
+}
+
+.timeline li,
+.dated-list li {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0 0 0.6rem;
+  line-height: 1.5;
+}
+
+.timeline .year,
+.dated-list .year {
+  flex: 0 0 6.5rem;
+  color: var(--global-heading-color);
+  font-weight: 600;
+}
+
+.timeline .event,
+.dated-list .event {
+  flex: 1 1 auto;
+}
+
+/* Journey: scrolls inside its own box so the page stays short */
+.timeline--scroll {
+  max-height: 16rem;
+  overflow-y: auto;
+  padding-right: 0.75rem;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #c9cdd1 transparent;
+}
+
+.timeline--scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.timeline--scroll::-webkit-scrollbar-thumb {
+  background: #c9cdd1;
+  border-radius: 3px;
+}
+
+.timeline--scroll:focus-visible {
+  outline: 1px solid $rule-color;
+  outline-offset: 4px;
+}
+
+/* Quote at the bottom of each page */
+.page-quote {
+  margin: 3rem 0 0;
+  padding: 0 0 0 1rem;
+  border-left: 2px solid var(--global-heading-color);
+  color: $muted;
+  font-style: italic;
+}
+
+/* Name in Devanagari under the sidebar name */
+.author__name-devanagari {
+  margin: 0.15rem 0 0;
+  color: $muted;
+  font-family: "Noto Sans Devanagari", "Nirmala UI", "Kohinoor Devanagari", "Devanagari Sangam MN", "Mangal", sans-serif;
+  line-height: 1.4;
+}
+
+/* --- Publications --- */
+.pub-list {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.pub-list li {
+  margin-bottom: 1rem;
+  line-height: 1.55;
+}
+
+.venue {
+  font-style: italic;
+}
+
+.pub-list a {
+  margin-left: 0.35rem;
+  white-space: nowrap;
+}
+
+.pub-note {
+  margin-top: 2rem;
+}
+
+/* --- Projects: plain entries separated by hairlines --- */
+.entry {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid $rule-color;
+}
+
+.entry:first-child {
+  padding-top: 0.25rem;
+}
+
+.entry:last-child {
+  border-bottom: none;
+}
+
+.entry h3 {
+  margin: 0 0 0.25rem;
+}
+
+.entry p {
+  margin: 0 0 0.6rem;
+  line-height: 1.6;
+}
+
+.entry .entry-meta {
+  margin-bottom: 0.75rem;
+}
+
+.entry p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Randomness: stable two-column gallery --- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.gallery figure {
   margin: 0;
 }
 
-.timeline-section li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px; /* Adds spacing between events */
-}
-
-.timeline-section .year {
-  font-weight: bold;
-  width: 120px; /* Fixed width for year column */
-  text-align: right;
-  padding-right: 15px;
-  flex-shrink: 0;
-}
-
-.timeline-section .event {
-  text-align: left;
-  flex-grow: 1;
-}
-
-.typewriter {
+.gallery img {
   display: block;
-  overflow: hidden;
-  border-right: 4px solid #00539f;
-  white-space: nowrap;
-  width: 0;
-  animation: typing 3s steps(80) 1s forwards, blink 0.75s step-end infinite;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
+.gallery figcaption {
+  margin-top: 0.5rem;
+  line-height: 1.45;
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .project {
+    flex-direction: column;
+    gap: 0.75rem;
   }
-  to {
+
+  .project-image {
+    flex: none;
     width: 100%;
   }
-}
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
+  .timeline .year,
+  .dated-list .year {
+    flex-basis: 5.5rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
   }
 }
 
 /* Global container: centers content, consistent responsive padding */
 .container {
-  max-width: 1200px;
+  max-width: 1080px; /* keep the whole site in a centered column */
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 5rem;
   box-sizing: border-box;
+}
+
+/* Space between the top bar and the page content */
+#main {
+  margin-top: 2.5rem;
 }
 
 /* Navigation bar: same padding as main .container (horizontal only) */
 .masthead .container {
-  padding: 0 2rem;
+  padding: 0 5rem;
+}
+
+@media (max-width: 1024px) {
+  .container,
+  .masthead .container {
+    padding: 0 3.5rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 0 1.25rem;
-  }
+  .container,
   .masthead .container {
-    padding: 0 1.25rem;
+    padding: 0 2.25rem;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 0 1rem;
-  }
+  .container,
   .masthead .container {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 }
 
-/* Section spacing for clarity */
-.section-title,
-.projects-section,
-.timeline-section {
-  margin-top: 1.5rem;
+/* Top bar: links start at the same left edge as the sidebar/content,
+   are evenly spaced, and sit vertically centered in the bar */
+.masthead__inner-wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.projects-section {
-  padding-bottom: 0.5rem;
-  gap: 1.75rem;
+.masthead__menu {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
+.greedy-nav {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  min-height: 2.5rem;
+}
+
+.greedy-nav .visible-links {
+  /* reserve room on the right for the menu button when links collapse */
+  margin-right: 3rem;
+}
+
+.masthead__menu-item--lg {
+  padding-right: 0;
+}
+
+/* Profile photo: three rounded corners, one square corner */
+.author__avatar img.author__avatar-img {
+  display: block;
+  width: 100%;
+  max-width: 10rem; /* smaller photo */
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  border-radius: 2rem 2rem 2rem 0;
+}
+
+/* Phones/tablets: sidebar sits above the content (photo | name, links below) */
+@media (max-width: 924px) {
+  .author__avatar {
+    width: auto;
+    padding-right: 0;
+  }
+
+  .author__avatar img.author__avatar-img {
+    width: 104px;
+    max-width: none;
+    border-radius: 1.5rem 1.5rem 1.5rem 0;
+  }
+
+  .author__content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sidebar {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .author__avatar img.author__avatar-img {
+    width: 84px;
+    border-radius: 1.25rem 1.25rem 1.25rem 0;
+  }
+
+  .author__content {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+/* Desktop: fixed-width sidebar with a tight gap to the main text.
+   The top bar mirrors these columns: "Home" sits above the sidebar,
+   the other links start where the main text starts. */
+$sidebar-col-width: 13.5rem;
+$sidebar-col-gap: 2.25rem;
+
+@media (min-width: 925px) {
+  .sidebar {
+    width: $sidebar-col-width;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .sidebar .author__content {
+    padding-top: 0.75rem;
+  }
+
+  #main > .page,
+  #main > .archive {
+    width: calc(100% - #{$sidebar-col-width} - #{$sidebar-col-gap});
+    padding-left: 0;
+    float: right;
+    margin-right: 0;
+  }
+
+  .greedy-nav .visible-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .greedy-nav .visible-links li {
+    display: block;
+  }
+
+  /* Home column = sidebar + gap, minus the next link's 1rem left margin.
+     The padding leaves exactly the sidebar's width, so "Home" is centered over the sidebar. */
+  .greedy-nav .visible-links li.masthead__menu-item--lg {
+    flex: 0 0 auto;
+    width: calc(#{$sidebar-col-width} + #{$sidebar-col-gap} - 1rem);
+    padding-right: calc(#{$sidebar-col-gap} - 1rem);
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .greedy-nav .visible-links li.masthead__menu-item--lg a {
+    display: inline-block;
+    margin-right: 0;
+  }
+}
+
+/* Let long sidebar items (e.g. "University of Delaware") wrap instead of being cut off */
+.sidebar .author__urls li,
+.sidebar .author__urls a {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* Sidebar links are always visible (no "Follow" toggle) */
+.sidebar .author__urls a {
+  color: $muted;
+}
+
+.sidebar .author__urls a:hover {
+  color: var(--global-link-color);
+}
+
+/* Phones/tablets: photo + name side by side, links in one wrapped row below */
+@media (max-width: 924px) {
+  .sidebar [itemtype="http://schema.org/Person"] {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  .sidebar .author__avatar,
+  .sidebar .author__content {
+    display: block;
+  }
+
+  .sidebar .author__urls-wrapper {
+    display: block;
+    grid-column: 1 / -1;
+  }
+
+  .sidebar .author__urls {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    position: static;
+    margin: 1rem 0 0;
+    padding: 0;
+    background: transparent;
+  }
+
+  .sidebar .author__urls li {
+    margin: 0;
+  }
+
+  .sidebar .author__urls a {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Show affiliation as soon as the sidebar becomes a column */
+@media (min-width: 925px) {
+  .sidebar .author__desktop {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   TYPE SCALE: the only font sizes used on the site (6 in total)
+   Sizes are in rem so they follow the browser's font setting, and scale
+   fluidly with clamp() between a 400px and a 1280px wide viewport.
+   Ratio ~1.25 on phones (16/20/26/32), ~1.333 on desktop (18/24/32/42.7).
+   ========================================================================== */
+
+:root {
+  --fs-small: 0.875rem;                                        /* 14px: captions, labels, sidebar, footnotes */
+  --fs-nav:   1rem;                                            /* 16px: navigation */
+  --fs-body:  clamp(1rem,    0.9432rem + 0.2273vw, 1.125rem);  /* 16 -> 18px */
+  --fs-h3:    clamp(1.25rem, 1.1364rem + 0.4545vw, 1.5rem);    /* 20 -> 24px */
+  --fs-h2:    clamp(1.625rem, 1.4545rem + 0.6818vw, 2rem);     /* 26 -> 32px */
+  --fs-h1:    clamp(2rem,    1.697rem + 1.2121vw, 2.6667rem);  /* 32 -> 42.7px */
+
+  --lh-body: 1.6;
+  --lh-heading: 1.2;
+}
+
+body {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+}
+
+/* Everything in the reading column inherits the body size */
+.page__content,
+.archive,
+.page__content p,
+.page__content li,
+.archive p,
+.archive li,
+.page-quote {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+}
+
+/* Headings */
+h1,
+.page__title {
+  font-size: var(--fs-h1);
+  line-height: 1.15;
+}
+
+h2,
+.page__content h2,
+.archive h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-heading);
+}
+
+h3,
+.page__content h3,
+.archive h3,
+.project-info h3,
+.entry h3 {
+  font-size: var(--fs-h3);
+  line-height: 1.3;
+}
+
+/* Selected Research paper titles: body size, semi-bold (long titles stay calm) */
+.page__content .project-info h3 {
+  font-size: var(--fs-body);
+  line-height: 1.4;
+}
+
+/* Semi-bold headings: clear hierarchy without shouting */
+h1, h2, h3,
+.page__title {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* h4-h6 are not used on the site; keep them on the scale rather than adding sizes */
+h4, h5, h6 {
+  font-size: var(--fs-body);
+  line-height: 1.3;
+}
+
+/* Navigation */
+.greedy-nav a,
+.greedy-nav .hidden-links a {
+  font-size: var(--fs-nav);
+}
+
+/* Small text: captions, labels, secondary details, sidebar */
+.page__content p.project-meta,
+.archive .entry p.entry-meta,
+.archive p.pub-note,
+.archive .gallery figcaption,
+.sidebar p,
+.sidebar li,
+.sidebar .author__bio,
+.sidebar .author__urls li,
+.sidebar .author__name-devanagari {
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+
+/* Sidebar name: body size, bold - it labels the person, it isn't a section */
+.sidebar .author__name {
+  font-size: var(--fs-body);
+  line-height: 1.3;
+}
+
+/* The venue sits inside a sentence, so it keeps the sentence's size */
+.venue {
+  font-size: inherit;
+}
 
